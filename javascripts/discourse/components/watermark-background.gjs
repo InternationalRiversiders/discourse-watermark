@@ -183,6 +183,23 @@ export default class WatermarkBackground extends Component {
   @action
   setDomElement(element) {
     this.#domElement = element;
+    if (element && document.body) {
+      schedule("afterRender", () => {
+        if (!element.parentNode) return;
+        const mountDiv = document.getElementById('mount');
+        if (mountDiv) {
+          mountDiv.appendChild(element);
+        } else {
+          const div1 = document.createElement('div');
+          const div2 = document.createElement('div');
+          const div3 = document.createElement('div');
+          div1.appendChild(div2);
+          div2.appendChild(div3);
+          div3.appendChild(element);
+          document.body.appendChild(div1);
+        }
+      });
+    }
   }
 
   @action
