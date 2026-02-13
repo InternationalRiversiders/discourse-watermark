@@ -84,7 +84,7 @@ tile_height:
     zh_CN: "包含水印信息的方片高度（px）"
 
 color:
-  default: "var(--primary-low)"
+  default: "color-mix(in srgb, var(--secondary) 97%, var(--primary) 3%)"
   type: string
   description: 
     en: "The color of the watermark text."
@@ -104,7 +104,7 @@ text_align:
     zh_CN: "绘制文本时，相对 x、y 坐标的对齐方向"
 
 text_rotation:
-  default: -45
+  default: -30
   min: -90
   max: 90
   type: integer  
@@ -154,7 +154,7 @@ display_uid:
     zh_CN: "水印中渲染当前的uid"
 
 display_uid_font:
-  default: "bolder 2rem var(--font-family)"
+  default: "bolder 1.5rem var(--font-family)"
   type: string
   description: 
     en: "The font used to render the uid (parsed as CSS font value)."
@@ -186,7 +186,7 @@ display_timestamp:
     zh_CN: "水印中渲染时戳"
 
 display_timestamp_format:
-  default: ""
+  default: "YY-MM-DD"
   type: string
   description: 
     en: "How the timestamp will be formatted. For information about the valid formats, please refer to https://momentjs.com/docs/#/displaying/."
