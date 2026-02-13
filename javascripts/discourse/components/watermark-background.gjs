@@ -258,7 +258,7 @@ export default class WatermarkBackground extends Component {
 
   <template>
     <div
-      id="watermark-background"
+      id="efbad92069e12a5f085de0746b853ab"
       class={{if @scrollEnabled "scroll" "fixed"}}
       {{didInsert this.setDomElement}}
     />

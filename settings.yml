@@ -66,7 +66,7 @@ or_if_url_matches:
     zh_CN: "或者，当站点URL满足这个正则时显示水印。注意，用来测试的URL不包含主机名。"
 
 tile_width:
-  default: 220
+  default: 200
   min: 0
   type: integer  
   description: 
@@ -75,7 +75,7 @@ tile_width:
     zh_CN: "包含水印信息的方片宽度（px）"
 
 tile_height:
-  default: 220
+  default: 150
   min: 0
   type: integer  
   description: 
@@ -84,7 +84,7 @@ tile_height:
     zh_CN: "包含水印信息的方片高度（px）"
 
 color:
-  default: "color-mix(in srgb, var(--secondary) 97%, var(--primary) 3%)"
+  default: "rgb(from color-mix(in srgb, var(--secondary) 85%, var(--primary) 15%) r g b / 0.2)"
   type: string
   description: 
     en: "The color of the watermark text."
@@ -138,7 +138,7 @@ display_text_x:
     zh_CN: "在方片画布中绘制文本时，x 轴坐标的起点（px）"
 
 display_text_y:
-  default: 116
+  default: 90
   type: integer    
   description: 
     en: "The y-axis coordinate of the point at which to begin drawing the text in the tile canvas, in pixels."
@@ -170,7 +170,7 @@ display_uid_x:
     zh_CN: "在方片画布中绘制uid时，x 轴坐标的起点（px）"
 
 display_uid_y:
-  default: 140
+  default: 114
   type: integer    
   description: 
     en: "The y-axis coordinate of the point at which to begin drawing the uid in the tile canvas, in pixels."
@@ -210,7 +210,7 @@ display_timestamp_x:
     zh_CN: "在方片画布中绘制时戳时，x 轴坐标的起点（px）"
 
 display_timestamp_y:
-  default: 164
+  default: 138
   type: integer    
   description: 
     en: "The y-axis coordinate of the point at which to begin drawing the timestamp in the tile canvas, in pixels."
