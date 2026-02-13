@@ -9,15 +9,15 @@ const renderWatermarkDataURL = (canvas, settings, data) => {
     display_text_font,
     display_text_x,
     display_text_y,
-    display_username_font,
-    display_username_x,
-    display_username_y,
+    display_uid_font,
+    display_uid_x,
+    display_uid_y,
     display_timestamp_font,
     display_timestamp_x,
     display_timestamp_y,
   } = settings;
 
-  const { username, timestamp } = data;
+  const { uid, timestamp } = data;
 
   canvas.width = width;
   canvas.height = height;
@@ -33,9 +33,9 @@ const renderWatermarkDataURL = (canvas, settings, data) => {
     ctx.fillText(display_text, display_text_x, display_text_y);
   }
 
-  if (username) {
-    ctx.font = display_username_font;
-    ctx.fillText(username, display_username_x, display_username_y);
+  if (uid) {
+    ctx.font = display_uid_font;
+    ctx.fillText(uid, display_uid_x, display_uid_y);
   }
 
   if (timestamp) {

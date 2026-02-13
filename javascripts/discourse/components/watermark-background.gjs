@@ -121,7 +121,7 @@ export default class WatermarkBackground extends Component {
     if (
       !(
         settings.display_text.trim() !== "" ||
-        settings.display_username ||
+        settings.display_uid ||
         settings.display_timestamp
       )
     ) {
@@ -217,9 +217,9 @@ export default class WatermarkBackground extends Component {
       watermarkDiv,
       settings.display_text_font
     );
-    const resolvedUsernameFont = getComputedFont(
+    const resolvedUidFont = getComputedFont(
       watermarkDiv,
-      settings.display_username_font
+      settings.display_uid_font
     );
     const resolvedTimestampFont = getComputedFont(
       watermarkDiv,
@@ -227,7 +227,7 @@ export default class WatermarkBackground extends Component {
     );
 
     const data = {
-      username: settings.display_username ? this.currentUser?.username : null,
+      uid: settings.display_uid ? this.currentUser?.id : null,
       timestamp: settings.display_timestamp
         ? moment().format(settings.display_timestamp_format)
         : null
@@ -239,7 +239,7 @@ export default class WatermarkBackground extends Component {
         ...settings,
         color: resolvedColor,
         display_text_font: resolvedTextFont,
-        display_username_font: resolvedUsernameFont,
+        display_uid_font: resolvedUidFont,
         display_timestamp_font: resolvedTimestampFont
       },
       data

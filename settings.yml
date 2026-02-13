@@ -145,37 +145,37 @@ display_text_y:
     pt_BR: "A coordenada no eixo y para o ponto em que o texto deve ser desenhado no canvas do bloco, em pixels."
     zh_CN: "在方片画布中绘制文本时，y 轴坐标的起点（px）"
 
-display_username:
+display_uid:
   default: true
   type: bool
   description: 
-    en: "If enabled the watermark will render the current username."
+    en: "If enabled the watermark will render the current uid."
     pt_BR: "Se ativado a marca d'água irá renderizar o código do usuário."
-    zh_CN: "水印中渲染当前的用户名"
+    zh_CN: "水印中渲染当前的uid"
 
-display_username_font:
+display_uid_font:
   default: "bolder 2rem var(--font-family)"
   type: string
   description: 
-    en: "The font used to render the username (parsed as CSS font value)."
+    en: "The font used to render the uid (parsed as CSS font value)."
     pt_BR: "A fonte usada para renderizar o código do usuário (intepretado com um valor da propriedade font em CSS)."
-    zh_CN: "渲染当前用户名的字体（解析为 CSS 字体值）"
+    zh_CN: "渲染当前uid的字体（解析为 CSS 字体值）"
 
-display_username_x:
+display_uid_x:
   default: 0
   type: integer    
   description: 
-    en: "The x-axis coordinate of the point at which to begin drawing the username in the tile canvas, in pixels."
+    en: "The x-axis coordinate of the point at which to begin drawing the uid in the tile canvas, in pixels."
     pt_BR: "A coordenada no eixo x para o ponto em que o código do usuário deve ser desenhado no canvas do bloco, em pixels."
-    zh_CN: "在方片画布中绘制用户名时，x 轴坐标的起点（px）"
+    zh_CN: "在方片画布中绘制uid时，x 轴坐标的起点（px）"
 
-display_username_y:
+display_uid_y:
   default: 140
   type: integer    
   description: 
-    en: "The y-axis coordinate of the point at which to begin drawing the username in the tile canvas, in pixels."
+    en: "The y-axis coordinate of the point at which to begin drawing the uid in the tile canvas, in pixels."
     pt_BR: "A coordenada no eixo y para o ponto em que o código do usuário deve ser desenhado no canvas do bloco, em pixels."
-    zh_CN: "在方片画布中绘制用户名时，y 轴坐标的起点（px）"
+    zh_CN: "在方片画布中绘制uid时，y 轴坐标的起点（px）"
 
 display_timestamp:
   default: true

@@ -1,8 +1,8 @@
 {
   "about_url": "https://meta.discourse.org/t/discourse-web-page-watermark/214108",
-  "license_url": "https://github.com/megothss/discourse-watermark/blob/main/LICENSE.txt",
+  "license_url": "https://github.com/InternationalRiversiders/discourse-watermark/blob/main/LICENSE.txt",
   "assets": {
   },
-  "name": "discourse-watermark",
+  "name": "discourse-watermark_new",
   "component": true
 }
