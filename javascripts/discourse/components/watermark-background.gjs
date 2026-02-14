@@ -225,9 +225,17 @@ export default class WatermarkBackground extends Component {
     const watermarkDiv = this.#domElement;
     const canvas = document.createElement("canvas");
 
+    // Use settings.fallback_color if modern color values are used but not supported by the browser.
+    let color = settings.color
+    const div = document.createElement('div')
+    div.style.color = color
+    if (!div.style.color) {
+      color = settings.fallback_color
+    }
+
     // we will use the dom element to resolve the CSS color even if
     // the user specify a CSS variable
-    const resolvedColor = getComputedColor(watermarkDiv, settings.color);
+    const resolvedColor = getComputedColor(watermarkDiv, color);
 
     // now we will use the same trick to resolve the fonts
     const resolvedTextFont = getComputedFont(

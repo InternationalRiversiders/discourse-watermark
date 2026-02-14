@@ -90,6 +90,13 @@ color:
     en: "The color of the watermark text."
     pt_BR: "A cor do texto na marca d'agua."
     zh_CN: "水印文本的颜色"
+fallback_color:
+  default: "rgba(128, 128, 128, 0.3)"
+  type: string
+  description:
+    en: "The color of the watermark text (for older browsers)."
+    pt_BR: "A cor do texto na marca d'agua."
+    zh_CN: "水印文本的颜色（用于旧版浏览器）"
 
 text_align:
   default: center
