@@ -84,7 +84,7 @@ tile_height:
     zh_CN: "包含水印信息的方片高度（px）"
 
 color:
-  default: "rgb(from color-mix(in srgb, var(--secondary) 85%, var(--primary) 15%) r g b / 0.2)"
+  default: "var(--discourse-watermark-default-color)"
   type: string
   description: 
     en: "The color of the watermark text."
